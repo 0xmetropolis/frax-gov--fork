@@ -19,6 +19,10 @@
   "license": "ISC",
   "dependencies": {
     "@gnosis.pm/safe-contracts": "github:safe-global/safe-contracts#v1.3.0",
+    "@tenderly/sdk": "^0.1.14",
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
+    "ethers": "^5.7.1",
     "frax-standard-solidity": "github:FraxFinance/frax-standard-solidity",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.1",

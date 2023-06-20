@@ -5,6 +5,7 @@ import { TimelockController } from "@openzeppelin/contracts/governance/TimelockC
 import { BaseScript } from "frax-std/BaseScript.sol";
 import { console } from "frax-std/FraxTest.sol";
 import { Constants } from "script/Constants.sol";
+import { Greeter } from "../../src/Greeter.sol";
 import {
     deployFraxGovernorAlpha,
     deployFraxGovernorOmega,
@@ -20,6 +21,9 @@ contract DeployTestnet is BaseScript {
         broadcaster
         returns (address payable _address, bytes memory _constructorParams, string memory _contractName)
     {
+        Greeter greeter = new Greeter();
+        greeter.setGreeting("later gator");
+
         (address _addressVoting, bytes memory _constructorParamsVoting, ) = deployVeFxsVotingDelegation(
             Constants.ARBITRUM_TEST_MOCK_VE_FXS
         );

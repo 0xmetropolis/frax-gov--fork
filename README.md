@@ -1,3 +1,7 @@
+# Playground
+
+First, run `forge build`, then you can use `ts-node test.ts` to mess around with the contracts.
+
 # Frax Governance
 
 ## Overview

@@ -1,0 +1,1403 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "hashToApprove",
+          "type": "bytes32"
+        }
+      ],
+      "name": "approveHash",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "signer",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "txHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "approvedHashes",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "dataHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        },
+        {
+          "internalType": "bytes",
+          "name": "signatures",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "requiredSignatures",
+          "type": "uint256"
+        }
+      ],
+      "name": "checkNSignatures",
+      "outputs": [],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getThreshold",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        },
+        {
+          "internalType": "enum Enum.Operation",
+          "name": "operation",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "safeTxGas",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "baseGas",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "gasPrice",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "gasToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "refundReceiver",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_nonce",
+          "type": "uint256"
+        }
+      ],
+      "name": "getTransactionHash",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "isOwner",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "nonce",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "approveHash(bytes32)": "d4d9bdcd",
+    "approvedHashes(address,bytes32)": "7d832974",
+    "checkNSignatures(bytes32,bytes,bytes,uint256)": "12fb68e0",
+    "getThreshold()": "e75235b8",
+    "getTransactionHash(address,uint256,bytes,uint8,uint256,uint256,uint256,address,address,uint256)": "d8d11f78",
+    "isOwner(address)": "2f54bf6e",
+    "nonce()": "affed0e0"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"hashToApprove\",\"type\":\"bytes32\"}],\"name\":\"approveHash\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"signer\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"txHash\",\"type\":\"bytes32\"}],\"name\":\"approvedHashes\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"dataHash\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"signatures\",\"type\":\"bytes\"},{\"internalType\":\"uint256\",\"name\":\"requiredSignatures\",\"type\":\"uint256\"}],\"name\":\"checkNSignatures\",\"outputs\":[],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getThreshold\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"},{\"internalType\":\"enum Enum.Operation\",\"name\":\"operation\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"safeTxGas\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"baseGas\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"gasPrice\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"gasToken\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"refundReceiver\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_nonce\",\"type\":\"uint256\"}],\"name\":\"getTransactionHash\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"isOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"nonce\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"approveHash(bytes32)\":{\"details\":\"Marks a hash as approved. This can be used to validate a hash that is used by a signature.\",\"params\":{\"hashToApprove\":\"The hash that should be marked as approved for signatures that are verified by this contract.\"}},\"checkNSignatures(bytes32,bytes,bytes,uint256)\":{\"details\":\"Checks whether the signature provided is valid for the provided data, hash. Will revert otherwise.\",\"params\":{\"data\":\"That should be signed (this is passed to an external validator contract)\",\"dataHash\":\"Hash of the data (could be either a message hash or transaction hash)\",\"requiredSignatures\":\"Amount of required valid signatures.\",\"signatures\":\"Signature data that should be verified. Can be ECDSA signature, contract signature (EIP-1271) or approved hash.\"}},\"getTransactionHash(address,uint256,bytes,uint8,uint256,uint256,uint256,address,address,uint256)\":{\"details\":\"Returns hash to be signed by owners.\",\"params\":{\"_nonce\":\"Transaction nonce.\",\"baseGas\":\"Gas costs for data used to trigger the safe transaction.\",\"data\":\"Data payload.\",\"gasPrice\":\"Maximum gas price that should be used for this transaction.\",\"gasToken\":\"Token address (or 0 if ETH) that is used for the payment.\",\"operation\":\"Operation type.\",\"refundReceiver\":\"Address of receiver of gas payment (or 0 if tx.origin).\",\"safeTxGas\":\"Fas that should be used for the safe transaction.\",\"to\":\"Destination address.\",\"value\":\"Ether value.\"},\"returns\":{\"_0\":\"Transaction hash.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/interfaces/ISafe.sol\":\"ISafe\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"none\"},\"optimizer\":{\"enabled\":false,\"runs\":5000},\"remappings\":[\":@gnosis.pm/=node_modules/@gnosis.pm/safe-contracts/\",\":@openzeppelin/=node_modules/openzeppelin-solidity/\",\":ds-test/=node_modules/ds-test/src/\",\":forge-std/=node_modules/forge-std/src/\",\":frax-std/=node_modules/frax-standard-solidity/src/\",\":safe-contracts/=node_modules/@gnosis.pm/safe-contracts/contracts/\",\":safe-tools/=node_modules/safe-tools/src/\",\":solady/=node_modules/solady/src/\"]},\"sources\":{\"node_modules/@gnosis.pm/safe-contracts/contracts/common/Enum.sol\":{\"keccak256\":\"0x473e45b1a5cc47be494b0e123c9127f0c11c1e0992a321ae5a644c0bfdb2c14f\",\"license\":\"LGPL-3.0-only\",\"urls\":[\"bzz-raw://948e6d5a8bd7377f7795b6e28584eab9be5c0a8db240bf5e606744a175238c3d\",\"dweb:/ipfs/QmQQaUmQfpuejV41jbxKSTgEBYYCcVTjCsDMgf2htgz6ej\"]},\"src/interfaces/ISafe.sol\":{\"keccak256\":\"0xe35171cf2b35135e42e9f8fea0b02affd31d43bca23db963af9cdfd20917bcec\",\"license\":\"ISC\",\"urls\":[\"bzz-raw://2d28cfe056fb43df2aebe2b16d7abd60281a8faefc2231bae5264d54952ded18\",\"dweb:/ipfs/QmSKSM2apePPPyx8oKvQhGRTXznKjftAJwCp2EU8gN5MAR\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.19+commit.7dd6d404"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "hashToApprove",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "approveHash"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "signer",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "txHash",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "approvedHashes",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "dataHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "signatures",
+              "type": "bytes"
+            },
+            {
+              "internalType": "uint256",
+              "name": "requiredSignatures",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "checkNSignatures"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getThreshold",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "value",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            },
+            {
+              "internalType": "enum Enum.Operation",
+              "name": "operation",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint256",
+              "name": "safeTxGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "baseGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "gasPrice",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "gasToken",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "refundReceiver",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_nonce",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getTransactionHash",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "isOwner",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "nonce",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "approveHash(bytes32)": {
+            "details": "Marks a hash as approved. This can be used to validate a hash that is used by a signature.",
+            "params": {
+              "hashToApprove": "The hash that should be marked as approved for signatures that are verified by this contract."
+            }
+          },
+          "checkNSignatures(bytes32,bytes,bytes,uint256)": {
+            "details": "Checks whether the signature provided is valid for the provided data, hash. Will revert otherwise.",
+            "params": {
+              "data": "That should be signed (this is passed to an external validator contract)",
+              "dataHash": "Hash of the data (could be either a message hash or transaction hash)",
+              "requiredSignatures": "Amount of required valid signatures.",
+              "signatures": "Signature data that should be verified. Can be ECDSA signature, contract signature (EIP-1271) or approved hash."
+            }
+          },
+          "getTransactionHash(address,uint256,bytes,uint8,uint256,uint256,uint256,address,address,uint256)": {
+            "details": "Returns hash to be signed by owners.",
+            "params": {
+              "_nonce": "Transaction nonce.",
+              "baseGas": "Gas costs for data used to trigger the safe transaction.",
+              "data": "Data payload.",
+              "gasPrice": "Maximum gas price that should be used for this transaction.",
+              "gasToken": "Token address (or 0 if ETH) that is used for the payment.",
+              "operation": "Operation type.",
+              "refundReceiver": "Address of receiver of gas payment (or 0 if tx.origin).",
+              "safeTxGas": "Fas that should be used for the safe transaction.",
+              "to": "Destination address.",
+              "value": "Ether value."
+            },
+            "returns": {
+              "_0": "Transaction hash."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@gnosis.pm/=node_modules/@gnosis.pm/safe-contracts/",
+        ":@openzeppelin/=node_modules/openzeppelin-solidity/",
+        ":ds-test/=node_modules/ds-test/src/",
+        ":forge-std/=node_modules/forge-std/src/",
+        ":frax-std/=node_modules/frax-standard-solidity/src/",
+        ":safe-contracts/=node_modules/@gnosis.pm/safe-contracts/contracts/",
+        ":safe-tools/=node_modules/safe-tools/src/",
+        ":solady/=node_modules/solady/src/"
+      ],
+      "optimizer": {
+        "enabled": false,
+        "runs": 5000
+      },
+      "metadata": {
+        "bytecodeHash": "none"
+      },
+      "compilationTarget": {
+        "src/interfaces/ISafe.sol": "ISafe"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@gnosis.pm/safe-contracts/contracts/common/Enum.sol": {
+        "keccak256": "0x473e45b1a5cc47be494b0e123c9127f0c11c1e0992a321ae5a644c0bfdb2c14f",
+        "urls": [
+          "bzz-raw://948e6d5a8bd7377f7795b6e28584eab9be5c0a8db240bf5e606744a175238c3d",
+          "dweb:/ipfs/QmQQaUmQfpuejV41jbxKSTgEBYYCcVTjCsDMgf2htgz6ej"
+        ],
+        "license": "LGPL-3.0-only"
+      },
+      "src/interfaces/ISafe.sol": {
+        "keccak256": "0xe35171cf2b35135e42e9f8fea0b02affd31d43bca23db963af9cdfd20917bcec",
+        "urls": [
+          "bzz-raw://2d28cfe056fb43df2aebe2b16d7abd60281a8faefc2231bae5264d54952ded18",
+          "dweb:/ipfs/QmSKSM2apePPPyx8oKvQhGRTXznKjftAJwCp2EU8gN5MAR"
+        ],
+        "license": "ISC"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/interfaces/ISafe.sol",
+    "id": 55335,
+    "exportedSymbols": {
+      "Enum": [
+        1998
+      ],
+      "ISafe": [
+        55334
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:2470:98",
+    "nodes": [
+      {
+        "id": 55260,
+        "nodeType": "PragmaDirective",
+        "src": "32:25:98",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".19"
+        ]
+      },
+      {
+        "id": 55262,
+        "nodeType": "ImportDirective",
+        "src": "59:60:98",
+        "nodes": [],
+        "absolutePath": "node_modules/@gnosis.pm/safe-contracts/contracts/common/Enum.sol",
+        "file": "@gnosis.pm/contracts/common/Enum.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 55335,
+        "sourceUnit": 1999,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 55261,
+              "name": "Enum",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1998,
+              "src": "68:4:98",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 55334,
+        "nodeType": "ContractDefinition",
+        "src": "121:2380:98",
+        "nodes": [
+          {
+            "id": 55271,
+            "nodeType": "FunctionDefinition",
+            "src": "248:83:98",
+            "nodes": [],
+            "functionSelector": "7d832974",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "approvedHashes",
+            "nameLocation": "257:14:98",
+            "parameters": {
+              "id": 55267,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55264,
+                  "mutability": "mutable",
+                  "name": "signer",
+                  "nameLocation": "280:6:98",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55271,
+                  "src": "272:14:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 55263,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "272:7:98",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 55266,
+                  "mutability": "mutable",
+                  "name": "txHash",
+                  "nameLocation": "296:6:98",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55271,
+                  "src": "288:14:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 55265,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "288:7:98",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "271:32:98"
+            },
+            "returnParameters": {
+              "id": 55270,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55269,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55271,
+                  "src": "322:7:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 55268,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "322:7:98",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "321:9:98"
+            },
+            "scope": 55334,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 55276,
+            "nodeType": "FunctionDefinition",
+            "src": "337:44:98",
+            "nodes": [],
+            "functionSelector": "affed0e0",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "nonce",
+            "nameLocation": "346:5:98",
+            "parameters": {
+              "id": 55272,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "351:2:98"
+            },
+            "returnParameters": {
+              "id": 55275,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55274,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55276,
+                  "src": "372:7:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 55273,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "372:7:98",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "371:9:98"
+            },
+            "scope": 55334,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 55282,
+            "nodeType": "FunctionDefinition",
+            "src": "628:53:98",
+            "nodes": [],
+            "documentation": {
+              "id": 55277,
+              "nodeType": "StructuredDocumentation",
+              "src": "387:236:98",
+              "text": " @dev Marks a hash as approved. This can be used to validate a hash that is used by a signature.\n @param hashToApprove The hash that should be marked as approved for signatures that are verified by this contract."
+            },
+            "functionSelector": "d4d9bdcd",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "approveHash",
+            "nameLocation": "637:11:98",
+            "parameters": {
+              "id": 55280,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55279,
+                  "mutability": "mutable",
+                  "name": "hashToApprove",
+                  "nameLocation": "657:13:98",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55282,
+                  "src": "649:21:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 55278,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "649:7:98",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "648:23:98"
+            },
+            "returnParameters": {
+              "id": 55281,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "680:0:98"
+            },
+            "scope": 55334,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 55289,
+            "nodeType": "FunctionDefinition",
+            "src": "687:50:98",
+            "nodes": [],
+            "functionSelector": "2f54bf6e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isOwner",
+            "nameLocation": "696:7:98",
+            "parameters": {
+              "id": 55285,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55284,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55289,
+                  "src": "704:7:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 55283,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "704:7:98",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "703:9:98"
+            },
+            "returnParameters": {
+              "id": 55288,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55287,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55289,
+                  "src": "731:4:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 55286,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "731:4:98",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "730:6:98"
+            },
+            "scope": 55334,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 55294,
+            "nodeType": "FunctionDefinition",
+            "src": "743:56:98",
+            "nodes": [],
+            "functionSelector": "e75235b8",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getThreshold",
+            "nameLocation": "752:12:98",
+            "parameters": {
+              "id": 55290,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "764:2:98"
+            },
+            "returnParameters": {
+              "id": 55293,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55292,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55294,
+                  "src": "790:7:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 55291,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "790:7:98",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "789:9:98"
+            },
+            "scope": 55334,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 55321,
+            "nodeType": "FunctionDefinition",
+            "src": "1485:332:98",
+            "nodes": [],
+            "documentation": {
+              "id": 55295,
+              "nodeType": "StructuredDocumentation",
+              "src": "805:675:98",
+              "text": "@dev Returns hash to be signed by owners.\n @param to Destination address.\n @param value Ether value.\n @param data Data payload.\n @param operation Operation type.\n @param safeTxGas Fas that should be used for the safe transaction.\n @param baseGas Gas costs for data used to trigger the safe transaction.\n @param gasPrice Maximum gas price that should be used for this transaction.\n @param gasToken Token address (or 0 if ETH) that is used for the payment.\n @param refundReceiver Address of receiver of gas payment (or 0 if tx.origin).\n @param _nonce Transaction nonce.\n @return Transaction hash."
+            },
+            "functionSelector": "d8d11f78",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTransactionHash",
+            "nameLocation": "1494:18:98",
+            "parameters": {
+              "id": 55317,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55297,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nameLocation": "1530:2:98",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55321,
+                  "src": "1522:10:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 55296,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1522:7:98",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 55299,
+                  "mutability": "mutable",
+                  "name": "value",
+                  "nameLocation": "1550:5:98",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55321,
+                  "src": "1542:13:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 55298,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1542:7:98",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 55301,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "1580:4:98",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55321,
+                  "src": "1565:19:98",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_calldata_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 55300,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1565:5:98",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 55304,
+                  "mutability": "mutable",
+                  "name": "operation",
+                  "nameLocation": "1609:9:98",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55321,
+                  "src": "1594:24:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_Operation_$1997",
+                    "typeString": "enum Enum.Operation"
+                  },
+                  "typeName": {
+                    "id": 55303,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 55302,
+                      "name": "Enum.Operation",
+                      "nameLocations": [
+                        "1594:4:98",
+                        "1599:9:98"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1997,
+                      "src": "1594:14:98"
+                    },
+                    "referencedDeclaration": 1997,
+                    "src": "1594:14:98",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_Operation_$1997",
+                      "typeString": "enum Enum.Operation"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 55306,
+                  "mutability": "mutable",
+                  "name": "safeTxGas",
+                  "nameLocation": "1636:9:98",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55321,
+                  "src": "1628:17:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 55305,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1628:7:98",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 55308,
+                  "mutability": "mutable",
+                  "name": "baseGas",
+                  "nameLocation": "1663:7:98",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55321,
+                  "src": "1655:15:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 55307,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1655:7:98",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 55310,
+                  "mutability": "mutable",
+                  "name": "gasPrice",
+                  "nameLocation": "1688:8:98",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55321,
+                  "src": "1680:16:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 55309,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1680:7:98",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 55312,
+                  "mutability": "mutable",
+                  "name": "gasToken",
+                  "nameLocation": "1714:8:98",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55321,
+                  "src": "1706:16:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 55311,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1706:7:98",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 55314,
+                  "mutability": "mutable",
+                  "name": "refundReceiver",
+                  "nameLocation": "1740:14:98",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55321,
+                  "src": "1732:22:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 55313,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1732:7:98",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 55316,
+                  "mutability": "mutable",
+                  "name": "_nonce",
+                  "nameLocation": "1772:6:98",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55321,
+                  "src": "1764:14:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 55315,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1764:7:98",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1512:272:98"
+            },
+            "returnParameters": {
+              "id": 55320,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55319,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55321,
+                  "src": "1808:7:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 55318,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1808:7:98",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1807:9:98"
+            },
+            "scope": 55334,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 55333,
+            "nodeType": "FunctionDefinition",
+            "src": "2331:168:98",
+            "nodes": [],
+            "documentation": {
+              "id": 55322,
+              "nodeType": "StructuredDocumentation",
+              "src": "1823:503:98",
+              "text": "@dev Checks whether the signature provided is valid for the provided data, hash. Will revert otherwise.\n @param dataHash Hash of the data (could be either a message hash or transaction hash)\n @param data That should be signed (this is passed to an external validator contract)\n @param signatures Signature data that should be verified. Can be ECDSA signature, contract signature (EIP-1271) or approved hash.\n @param requiredSignatures Amount of required valid signatures."
+            },
+            "functionSelector": "12fb68e0",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "checkNSignatures",
+            "nameLocation": "2340:16:98",
+            "parameters": {
+              "id": 55331,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 55324,
+                  "mutability": "mutable",
+                  "name": "dataHash",
+                  "nameLocation": "2374:8:98",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55333,
+                  "src": "2366:16:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 55323,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2366:7:98",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 55326,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nameLocation": "2405:4:98",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55333,
+                  "src": "2392:17:98",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 55325,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2392:5:98",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 55328,
+                  "mutability": "mutable",
+                  "name": "signatures",
+                  "nameLocation": "2432:10:98",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55333,
+                  "src": "2419:23:98",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 55327,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2419:5:98",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 55330,
+                  "mutability": "mutable",
+                  "name": "requiredSignatures",
+                  "nameLocation": "2460:18:98",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 55333,
+                  "src": "2452:26:98",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 55329,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2452:7:98",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2356:128:98"
+            },
+            "returnParameters": {
+              "id": 55332,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2498:0:98"
+            },
+            "scope": 55334,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ISafe",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          55334
+        ],
+        "name": "ISafe",
+        "nameLocation": "131:5:98",
+        "scope": 55335,
+        "usedErrors": []
+      }
+    ],
+    "license": "ISC"
+  },
+  "id": 98
+}

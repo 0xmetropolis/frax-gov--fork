@@ -1,0 +1,1 @@
+metal preview script/DeployFraxGovernance.s.sol --chain-id 5 --optimize --optimizer-runs 0 --dev

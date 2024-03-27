@@ -5,7 +5,7 @@
 [submodule "lib/safe-tools"]
 	path = lib/safe-tools
 	url = https://github.com/colinnielsen/safe-tools
-	branch = 75b8b74dd74f3f6e0817006b20a0269e1ab046af
+	branch = v0.2.0
 [submodule "lib/frax-standard-solidity"]
 	path = lib/frax-standard-solidity
 	url = https://github.com/FraxFinance/frax-standard-solidity
